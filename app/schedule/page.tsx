@@ -12,7 +12,7 @@ export default function SchedulePage() {
     ]
 
     return (
-        <main className="my-15 w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
+        <div className="my-15 w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
             <h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">Schedule</h1>
             <div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
             {
@@ -24,6 +24,6 @@ export default function SchedulePage() {
                     </div>
                 ))
             }
-        </main>
+        </div>
     )
 }

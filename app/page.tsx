@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <section className="py-2 md:py-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
@@ -15,7 +15,7 @@ export default function Home() {
               <h3 className="text-[#99caea] text-xl md:text-2xl font-semibold mb-2">
                 North Carolina School of Science and Mathematics
               </h3>
-              <h4 className="text-[#d57e00] font-semibold text-lg md:text-xl font-medium mb-4">
+              <h4 className="text-[#d57e00] font-semibold text-lg md:text-xl mb-4">
                 Math Club Competition
               </h4>
               <p className="text-white text-lg mb-6 max-w-2xl">
@@ -37,6 +37,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
