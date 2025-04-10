@@ -28,9 +28,10 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
+    /*{ name: "Schedule", path: "/schedule" }
     { name: 'Practice Set', path: '/practice' },
     { name: 'Sponsors', path: '/sponsors' },
-    { name: 'About', path: '/about' },
+    { name: 'About', path: '/about' },*/
   ];
 
   return (
@@ -42,8 +43,8 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
-                <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#346094] to-[#99caea]">
-                  NC(SMC)<sup className='text-[#99caea]'>2</sup>
+                <span className="text-xl font-bold bg-clip-text text-[#f4c300]">
+                  NC(SMC)<sup className='text-[#f4c300]'>2</sup>
                 </span>
               </Link>
             </div>
