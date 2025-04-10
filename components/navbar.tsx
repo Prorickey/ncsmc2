@@ -28,15 +28,15 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    /*{ name: "Schedule", path: "/schedule" }
-    { name: 'Practice Set', path: '/practice' },
+    { name: "Schedule", path: "/schedule" }
+    /*{ name: 'Practice Set', path: '/practice' },
     { name: 'Sponsors', path: '/sponsors' },
     { name: 'About', path: '/about' },*/
   ];
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-gray-900 shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-[#111111] shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

@@ -1,8 +1,10 @@
 "use client";
 
+import Image from 'next/image';
+
 export default function Home() {
   return (
-    <div>
+    <main>
       <section className="py-2 md:py-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
@@ -26,9 +28,15 @@ export default function Home() {
                 Register
               </a>
             </div>
+            <Image 
+              src={'/contest-logo.png'} 
+              alt={'Contest Logo'}
+              height={500}
+              width={500}
+            />
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
