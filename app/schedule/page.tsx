@@ -6,8 +6,8 @@ export default function SchedulePage() {
         { title: 'Speed Round', time: '10:20-11:00', description: '30 questions, 40 minutes' },
         { title: 'Target Round', time: '11:10-11:40', description: '10 questions, 30 minutes (6 min per pair)' },
         { title: 'Lunch', time: '11:40-12:30', description: '' },
-        { title: 'Individual Round', time: '12:30-1:30', description: '(20 questions, 1 hour)' },
-        { title: 'Fun Activity', time: '1:30-2:00', description: 'Plank countdown? Momentum round? Something fun' },
+        { title: 'Team Round!', time: '12:30-1:30', description: '(20 questions, 1 hour)' },
+        { title: 'Fun Activity', time: '1:30-2:00', description: 'TBD, something fun!' },
         { title: 'Awards Ceremony', time: '2:00-2:30', description: '' }
     ]
 
