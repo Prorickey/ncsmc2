@@ -16,14 +16,15 @@ export default function Home() {
                 North Carolina School of Science and Mathematics
               </h3>
               <h4 className="text-[#d57e00] font-semibold text-lg md:text-xl mb-4">
-                Math Club Competition
+                Math Club Competition - May 10th
               </h4>
               <p className="text-white text-lg mb-6 max-w-2xl">
                 The NCSSM Math Club Competition, or NC(SMC)<sup>2</sup>, is an annual math competition that brings together middle schoolers across North Carolina. The competition will be held virtually this year.
               </p>
               <a 
                 onClick={() => window.open("https://forms.gle/BABr2xtG2Jewiej1A" )}
-                className="inline-block px-6 py-3 bg-[#f4c300] hover:bg-[#f4c300]/90 text-gray-900 font-medium rounded-md transition-colors duration-200"
+                className="inline-block px-6 py-3 bg-[#f4c300] hover:bg-[#f4c300]/90 
+                text-gray-900 font-medium rounded-md transition-colors duration-200 cursor-pointer"
               >
                 Register
               </a>
