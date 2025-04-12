@@ -18,9 +18,10 @@ export default function Home() {
               <h4 className="text-[#d57e00] font-semibold text-lg md:text-xl mb-4">
                 Math Club Competition - May 10th
               </h4>
-              <p className="text-white text-lg mb-6 max-w-2xl">
+              <p className="text-white text-lg mb-3 max-w-2xl">
                 The NCSSM Math Club Competition, or NC(SMC)<sup>2</sup>, is an annual math competition that brings together middle schoolers across North Carolina. The competition will be held virtually this year.
               </p>
+              <p className="text-lg mb-3">Contact: <a href="mailto:ncsmc2@gmail.com" className="underline underline-offset-3 decoration-[#f4c300]">ncsmc2@gmail.com</a></p>
               <a 
                 onClick={() => window.open("https://forms.gle/BABr2xtG2Jewiej1A" )}
                 className="inline-block px-6 py-3 bg-[#f4c300] hover:bg-[#f4c300]/90 
