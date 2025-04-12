@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-[#8a8a8d] hover:text-white hover:bg-[#346094]/60"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#8a8a8d] hover:text-white hover:bg-[#111111]/60"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
