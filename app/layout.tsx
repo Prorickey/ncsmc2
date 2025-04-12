@@ -15,10 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NC(SMC)²",
-  description: "Math competition for middle schoolers in North Carolina",
-  icons: {
-    icon: "/favicon.png",
-  }
+  description: "Math competition for middle schoolers in North Carolina"
 };
 
 export default function RootLayout({

@@ -1,15 +1,13 @@
 {
   "name": "ncsmc2",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:build": "docker build -t docker.prorickey.xyz/prorickey/ncsmc2:0.5.2 .",
-    "docker:push": "docker push docker.prorickey.xyz/prorickey/ncsmc2:0.5.2",
-    "docker": "npm run docker:build && npm run docker:push"
+    "docker": "node docker.js"
   },
   "dependencies": {
     "next": "15.3.0",
