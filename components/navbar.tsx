@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu, show/hide based on menu state */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900/95 backdrop-blur-sm">
+        <div className="md:hidden bg-[#111111] backdrop-blur-sm">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link

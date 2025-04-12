@@ -77,9 +77,35 @@ export default function PracticeProblems() {
         }));
     }
 
+    interface WindowDimensions {
+        width: number | undefined;
+        height: number | undefined;
+    }
+
+    const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>({
+        width: undefined,
+        height: undefined,
+    });
+
+    useEffect(() => {
+        function handleResize() {
+          setWindowDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+    
+        // Set initial dimensions
+        handleResize();
+    
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
     return (
         <div className="w-full flex flex-row justify-center">
-            <div className="w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
+            <div className="w-[95%] lg:w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
                 <h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">Practice Problems</h1>
                 <div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
                 <div className="flex flex-col items-center">
@@ -102,7 +128,7 @@ export default function PracticeProblems() {
                                 </div>
                                 <Document file={item.file} className="w-full" onLoadSuccess={(pdf) => onLoadSuccess(item.title, pdf.numPages)}>
                                 {pageNumber[item.title] && (
-                                    <Page pageNumber={pageNumber[item.title].page} />
+                                    <Page width={windowDimensions.width && windowDimensions.width > 450 ? undefined : 350} pageNumber={pageNumber[item.title].page} />
                                 )}
                                 </Document>
                                 <div className='flex flex-row justify-center flex-wrap'>
