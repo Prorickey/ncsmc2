@@ -1,6 +1,6 @@
 {
   "name": "ncsmc2",
-  "version": "0.5.3",
+  "version": "0.6.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -13,7 +13,8 @@
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-pdf": "^9.2.1"
+    "react-pdf": "^9.2.1",
+    "react-responsive-masonry": "^2.7.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -21,6 +22,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-responsive-masonry": "^2.6.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
     "tailwindcss": "^4",
