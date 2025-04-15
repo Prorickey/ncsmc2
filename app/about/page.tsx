@@ -8,7 +8,7 @@ const team = [
     {
         name: "Grace Luo",
         role: "Co-Czar & Problem Tester",
-        image: "/team/default.jpg"
+        image: "/team/grace.png"
     },
     {
         name: "Anushka Pramanik",
@@ -38,7 +38,7 @@ const team = [
     {
         name: "Brandon Yang",
         role: "Problem Tester",
-        image: "/team/default.jpg"
+        image: "/team/brandon.jpg"
     },
     {
         name: "Avery Yang",
@@ -58,7 +58,7 @@ const team = [
     {
         name: "Trevor Bedson",
         role: "Website Developer",
-        image: "/team/default.jpg"
+        image: "/team/trevor.png"
     }
 ];
 
@@ -97,7 +97,7 @@ export default function AboutUs() {
                                     alt={member.name}
                                     height={200}
                                     width={200}
-                                    className="rounded-full w-32 h-32 mx-auto mb-4"
+                                    className="rounded-full w-32 h-32 mx-auto mb-4 object-cover"
                                 />
                                 <h2 className="text-[#f4c300] text-xl font-semibold text-center">{member.name}</h2>
                                 <p className="text-[#8a8a8d] text-lg text-center">{member.role}</p>
