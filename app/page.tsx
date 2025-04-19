@@ -39,6 +39,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="py-10 text-white">
+        <div className='w-[85%] p-10 pl-0 rounded-r-[5rem] bg-primary-blue'>
+          <div className='flex flex-row'>
+            <div className='h-1 rounded-r-md bg-secondary-orange w-1/6 my-auto mr-4'></div>
+            <h1 className='text-4xl font-semibold text-nowrap'>Scoring</h1>
+          </div>
+          <div className='flex flex-row mt-2'>
+            <div className='w-1/6 my-auto mr-4'></div>
+            <p className='text-lg w-2/3'>
+            There will be individual winners and team winners. The individual score = 
+            (# of speed round questions correct) + 2 * (# of target round questions correct). 
+            The team score = # of team round questions correct. If two teams tie for the team 
+            score, then individual scores will be considered as a tiebreaker.
+            </p>
+          </div>
+          <div className='flex flex-row mt-10'>
+            <div className='h-1 rounded-r-md bg-secondary-blue w-1/6 my-auto mr-4'></div>
+            <h1 className='text-4xl font-semibold text-nowrap'>Rules</h1>
+          </div>
+          <div className='flex flex-row mt-2'>
+            <div className='w-1/6 my-auto mr-4'></div>
+            <ul className='text-lg mt-2 space-y-2 w-5/6'>
+              <li className='list-disc'>No calculators.</li>
+              <li className='list-disc'>No compasses.</li>
+              <li className='list-disc'>No other items other than a writing utensil and paper</li>
+            </ul>
+          </div>
+          <div className='flex flex-row mt-10'>
+            <div className='h-1 rounded-r-md bg-secondary-yellow w-1/6 my-auto mr-4'></div>
+            <h1 className='text-4xl font-semibold text-nowrap'>Eligibility</h1>
+          </div>
+          <div className='flex flex-row mt-2'>
+            <div className='w-1/6 my-auto mr-4'></div>
+            <ul className='text-lg mt-2 space-y-2 w-5/6'>
+              <li className='list-disc'>Students in grades 6-8 are eligible to compete.</li>
+              <li className='list-disc'>Students must be residents of North Carolina.</li>
+              <li className='list-disc'>Students must register by the deadline - May 8th.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

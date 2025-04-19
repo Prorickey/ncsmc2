@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-secondary-purple: #853175;
+  --color-secondary-green: #4b8b2a;
+  --color-secondary-orange: #d57e00;
+  --color-secondary-yellow: #f4c300;
+  --color-secondary-blue: #99caea;
+  --color-primary-blue: #346094
 }
 
 body {

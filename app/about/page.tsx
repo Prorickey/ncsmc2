@@ -43,7 +43,7 @@ const team = [
     {
         name: "Avery Yang",
         role: "Marketing",
-        image: "/team/default.jpg"
+        image: "/team/avery.png"
     },
     {
         name: "Megan Cherry",
