@@ -21,6 +21,7 @@ export default function Home() {
               <p className="text-white text-lg mb-3 max-w-2xl">
                 The NCSSM Math Club Competition, or NC(SMC)<sup>2</sup>, is an annual math competition that brings together middle schoolers across North Carolina. The competition will be held virtually this year.
               </p>
+              <p className='text-white text-lg mb-3 font-bold'>Registration deadline is 11:59 PM, May 8th</p>
               <p className="text-lg mb-3">Contact: <a href="mailto:ncsmc2@gmail.com" className="underline underline-offset-3 decoration-[#f4c300]">ncsmc2@gmail.com</a></p>
               <a 
                 onClick={() => window.open("https://forms.gle/BABr2xtG2Jewiej1A" )}
