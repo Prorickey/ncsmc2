@@ -62,9 +62,14 @@ export default function Home() {
           <div className='flex flex-row mt-2'>
             <div className='w-1/6 my-auto mr-4'></div>
             <ul className='text-lg mt-2 space-y-2 w-5/6'>
-              <li className='list-disc'>No calculators.</li>
-              <li className='list-disc'>No compasses.</li>
-              <li className='list-disc'>No other items other than a writing utensil and paper</li>
+              <li className='list-disc'>No calculators or compasses.</li>
+              <li className='list-disc'>No giving or accepting unauthorized assistance of any kind.</li>
+              <li className='list-disc'>No copying another's work to submit as your own.</li>
+              <li className='list-disc'>No use of AI, machine learning tools, or automated problem solvers (e.g., ChatGPT, WolframAlpha, Symbolab, etc.).</li>
+              <li className='list-disc'>No other items other than a writing utensil and paper except those specifically permitted by instructors.</li>
+              <li className='list-disc'>No turning off camera or stopping screen sharing during the test.</li>
+              <li className='list-disc'>No working on tests after the allotted time has ended.</li>
+              <li className='list-disc'>No violations of this honor pledge, subject to disqualification.</li>
             </ul>
           </div>
           <div className='flex flex-row mt-10'>
