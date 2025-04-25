@@ -64,7 +64,7 @@ export default function Home() {
             <ul className='text-lg mt-2 space-y-2 w-5/6'>
               <li className='list-disc'>No calculators or compasses.</li>
               <li className='list-disc'>No giving or accepting unauthorized assistance of any kind.</li>
-              <li className='list-disc'>No copying another's work to submit as your own.</li>
+              <li className='list-disc'>No copying another&apos;s work to submit as your own.</li>
               <li className='list-disc'>No use of AI, machine learning tools, or automated problem solvers (e.g., ChatGPT, WolframAlpha, Symbolab, etc.).</li>
               <li className='list-disc'>No other items other than a writing utensil and paper except those specifically permitted by instructors.</li>
               <li className='list-disc'>No turning off camera or stopping screen sharing during the test.</li>
