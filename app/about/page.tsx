@@ -33,7 +33,7 @@ const team = [
 	{
 		name: "Jay Peng",
 		role: "Problem Writing",
-		image: "/team/default.jpg"
+		image: "/team/jay.jpg"
 	},
 	{
 		name: "Brandon Yang",
