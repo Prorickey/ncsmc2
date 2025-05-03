@@ -5,7 +5,7 @@ const buildEslintCommand = filenames =>
 		.map(f => path.relative(process.cwd(), f))
 		.join(" --file ")}`
 
-module.exports = {
+export default {
 	"*.{js,jsx,ts,tsx}": filenames => {
 		const relativeFiles = filenames.map(f =>
 			path.relative(process.cwd(), f)
