@@ -7,6 +7,7 @@ export default function Home() {
 		<>
 			<MainContent />
 			<InfoSection />
+			<SponsorSection />
 		</>
 	)
 }
@@ -158,46 +159,56 @@ function InfoSection() {
 	)
 }
 
-// function SponsorSection() {
-// 	return (
-// 		<section className="py-10 text-white">
-// 			<div className="w-[85%] p-10 ml-auto rounded-l-[5rem] bg-secondary-purple">
-// 				<div className="flex flex-row">
-// 					<div className="h-1 rounded-r-md bg-secondary-orange w-1/6 my-auto mr-4"></div>
-// 					<h1 className="text-4xl font-semibold text-nowrap">
-// 						Sponsors
-// 					</h1>
-// 				</div>
-// 				<div className="flex flex-row mt-2">
-// 					<div className="w-1/6 my-auto mr-4"></div>
-// 					<p className="text-lg w-2/3">
-// 						We want to thank our sponsors for their support of the
-// 						NC(SMC)<sup>2</sup>! Without our sponsors, this event
-// 						would not be possible. If you are interested in
-// 						sponsoring the NC(SMC)<sup>2</sup>, please contact us at{" "}
-// 						<a
-// 							href="mailto:ncsmc2@gmail.com"
-// 							className="underline underline-offset-3 decoration-[#f4c300]">
-// 							ncsmc2@gmail.com
-// 						</a>
-// 					</p>
-// 				</div>
-// 				<div className="flex flex-row mt-2">
-// 					<div className="w-1/6 my-auto mr-4"></div>
-// 					<div className="flex flex-row mt-5">
-// 						<Image
-// 							src={"/sponsors/jane-street.png"}
-// 							alt={"Jane Street"}
-// 							height={300}
-// 							width={300}
-// 							className="hover:cursor-pointer py-3 px-5 bg-white rounded-xl"
-// 							onClick={() =>
-// 								window.open("https://www.janestreet.com/")
-// 							}
-// 						/>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</section>
-// 	)
-// }
+function SponsorSection() {
+	return (
+		<section className="py-10 text-white">
+			<div className="w-[85%] p-10 ml-auto rounded-l-[5rem] bg-secondary-purple">
+				<div className="flex flex-row">
+					<div className="h-1 rounded-r-md bg-secondary-orange w-1/6 my-auto mr-4"></div>
+					<h1 className="text-4xl font-semibold text-nowrap">
+						Sponsors
+					</h1>
+				</div>
+				<div className="flex flex-row mt-2">
+					<div className="w-1/6 my-auto mr-4"></div>
+					<p className="text-lg w-2/3">
+						We want to thank our sponsors for their support of the
+						NC(SMC)<sup>2</sup>! Without our sponsors, this event
+						would not be possible. If you are interested in
+						sponsoring the NC(SMC)<sup>2</sup>, please contact us at{" "}
+						<a
+							href="mailto:ncsmc2@gmail.com"
+							className="underline underline-offset-3 decoration-[#f4c300]">
+							ncsmc2@gmail.com
+						</a>
+					</p>
+				</div>
+				<div className="flex flex-row mt-2">
+					<div className="w-1/6 my-auto mr-4"></div>
+					<div className="flex flex-row mt-5 gap-x-5">
+						<Image
+							src={"/sponsors/jane-street.png"}
+							alt={"Jane Street"}
+							height={400}
+							width={400}
+							className="hover:cursor-pointer py-3 px-5 bg-white rounded-xl object-contain"
+							onClick={() =>
+								window.open("https://www.janestreet.com/")
+							}
+						/>
+						<Image
+							src={"/sponsors/aops.jpg"}
+							alt={"Jane Street"}
+							height={400}
+							width={400}
+							className="hover:cursor-pointer py-1 px-3 bg-white rounded-xl object-contain"
+							onClick={() =>
+								window.open("/sponsors/aops-flyer.pdf")
+							}
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+	)
+}
