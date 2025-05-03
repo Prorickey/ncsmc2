@@ -42,7 +42,9 @@ export default function SchedulePage() {
 			<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 				Schedule
 			</h1>
-			<p className="w-full text-center text-xl pb-1">Competition on Saturday, May 10th</p>
+			<p className="w-full text-center text-xl pb-1">
+				Competition on Saturday, May 10th
+			</p>
 			<div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
 			{schedule.map((item, index) => (
 				<div
