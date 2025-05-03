@@ -202,9 +202,7 @@ function SponsorSection() {
 							height={400}
 							width={400}
 							className="hover:cursor-pointer py-1 px-3 bg-white rounded-xl object-contain"
-							onClick={() =>
-								window.open("/sponsors/aops-flyer.pdf")
-							}
+							onClick={() => window.open("/sponsors/aops-flyer.pdf") }
 						/>
 					</div>
 				</div>
