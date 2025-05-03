@@ -18,7 +18,7 @@ const team = [
 	{
 		name: "Jett Mu",
 		role: "Problem Writing",
-		image: "/team/default.jpg"
+		image: "/team/jett.png"
 	},
 	{
 		name: "Tatiana Medved",
