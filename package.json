@@ -1,6 +1,6 @@
 {
 	"name": "ncsmc2",
-	"version": "1.1.2",
+	"version": "1.2.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -8,7 +8,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"docker": "node docker.js",
+		"docker": "node docker.cjs",
 		"style": "npx prettier . --write",
 		"prepare": "husky"
 	},
