@@ -19,22 +19,23 @@ export default function SchedulePage() {
 		},
 		{
 			title: "Target Round",
-			time: "11:10-11:40",
+			time: "11:10-11:50",
 			description:
 				"This round consists of 10 total questions, and lasts a total of 40 minutes. Each question is worth 2 points, and leaving a question blank does not yield extra points, nor do wrong answers receive any penalties. Participants will spend 6 minutes on the first two questions, the next 6 on the next two, and so on for all 5 pairs of questions, with a minute leeway between rounds."
 		},
-		{ title: "Lunch", time: "11:40-12:30", description: "" },
+		{ title: "Lunch", time: "11:50-12:30", description: "" },
 		{
 			title: "Team Round",
 			time: "12:30-1:30",
 			description: "20 questions, 1 hour"
 		},
 		{
-			title: "Fun Activity",
-			time: "1:30-2:00",
-			description: "TBD, something fun!"
+			title: "Fun Activity / Disputes",
+			time: "1:30-2:30",
+			description:
+				"TBD, something fun! Disputes need to be submitted by 2:00"
 		},
-		{ title: "Awards Ceremony", time: "2:00-2:30", description: "" }
+		{ title: "Awards Ceremony", time: "2:30-3:00", description: "" }
 	]
 
 	return (

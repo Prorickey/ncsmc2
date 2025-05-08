@@ -27,9 +27,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-[100vh]`}>
 				<Navbar />
-				<main className="py-24">{children}</main>
+				<main className="py-24 flex-1">{children}</main>
 				<Footer />
 			</body>
 		</html>

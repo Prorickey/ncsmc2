@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<>
+		<footer className="mt-auto">
 			<div className="w-full h-2 flex flex-row">
 				{[
 					"bg-secondary-orange",
@@ -12,7 +12,7 @@ export default function Footer() {
 					<div key={index} className={`w-full h-full ${color}`}></div>
 				))}
 			</div>
-			<footer className="bg-[#0f0f0f] text-white py-6">
+			<div className="bg-[#0f0f0f] text-white py-6 relative w-full">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<p className="text-sm md:text-base mb-4 md:mb-0">
@@ -29,7 +29,7 @@ export default function Footer() {
 						</p>
 					</div>
 				</div>
-			</footer>
-		</>
+			</div>
+		</footer>
 	)
 }
