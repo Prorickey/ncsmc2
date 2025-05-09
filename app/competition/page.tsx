@@ -31,6 +31,8 @@ export default async function CompetitionPage() {
 		teamId
 	}))
 
+	shuffle(filtered)
+
 	return (
 		<div className="w-full flex flex-row justify-center">
 			<div className="w-[95%] lg:w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
@@ -42,4 +44,21 @@ export default async function CompetitionPage() {
 			</div>
 		</div>
 	)
+}
+
+function shuffle(array: Competitor[]) {
+	let currentIndex = array.length
+
+	// While there remain elements to shuffle...
+	while (currentIndex != 0) {
+		// Pick a remaining element...
+		const randomIndex = Math.floor(Math.random() * currentIndex)
+		currentIndex--
+
+		// And swap it with the current element.
+		;[array[currentIndex], array[randomIndex]] = [
+			array[randomIndex],
+			array[currentIndex]
+		]
+	}
 }
