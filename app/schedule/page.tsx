@@ -30,7 +30,7 @@ export default function SchedulePage() {
 			description: "20 questions, 1 hour"
 		},
 		{
-			title: "Fun Activity / Disputes",
+			title: "Optional Fun Activity / Disputes",
 			time: "1:30-2:30",
 			description:
 				"TBD, something fun! Disputes need to be submitted by 2:00"

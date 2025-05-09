@@ -1,6 +1,6 @@
 "use server"
 
-import CompetitorsTable from "@/app/competition/competitors"
+import CompetitorsTable, { ZoomLink } from "@/app/competition/competitors"
 import { readFileSync } from "fs"
 import { parse } from "csv-parse"
 
@@ -39,7 +39,8 @@ export default async function CompetitionPage() {
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Competition Day Information
 				</h1>
-				<div className="h-[1px] bg-stone-400 w-[80%] mx-auto"></div>
+				<ZoomLink />
+				<div className="h-[1px] bg-stone-400 w-[80%] mt-2 mx-auto"></div>
 				<CompetitorsTable competitors={filtered} />
 			</div>
 		</div>

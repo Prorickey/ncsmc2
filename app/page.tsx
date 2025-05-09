@@ -8,6 +8,7 @@ export default function Home() {
 			<MainContent />
 			<InfoSection />
 			<SponsorSection />
+			<FAQSection />
 		</>
 	)
 }
@@ -202,8 +203,83 @@ function SponsorSection() {
 							height={400}
 							width={400}
 							className="hover:cursor-pointer py-1 px-3 bg-white rounded-xl object-contain"
-							onClick={() => window.open("/sponsors/aops-flyer.pdf") }
+							onClick={() =>
+								window.open("/sponsors/aops-flyer.pdf")
+							}
 						/>
+					</div>
+				</div>
+			</div>
+		</section>
+	)
+}
+
+function FAQSection() {
+	const faqs = [
+		{
+			question: "How do we submit your answers?",
+			answer: "There will be google forms for each round. For the target round, there will be a separate form for each pair of questions. There will also be a passcode that unlocks each google form, so listen to the NC(SMC)^2 Leaders during the zoom meeting! Additionally, please use the same email address when submitting all answer google forms."
+		},
+		{
+			question:
+				"Should teammates work in the same room or work remotely?",
+			answer: "Either works! We will have zoom breakout rooms set up for every team, so it's up to the team members if they want to be together. However, we do ask that if they are in the same room that the team members sit a little further away from each other during the individual rounds."
+		},
+		{
+			question: "What's the zoom link?",
+			answer: "https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2"
+		},
+		{
+			question: "What prizes will be awarded?",
+			answer: "We plan to have trophies for the top 5 individuals, AOPS coupons for the top team, and Jane Street shirts for the top 5 teams. There may be extra prizes, TBD!"
+		},
+		{
+			question:
+				"Within each of the three rounds - can you go back to check/correct your answers?",
+			answer: "Yes, for the speed and team rounds. However, for the Target Round, you can't change your answers after submitting each pair. For example, after you submit your answers to Q1 and Q2 and move onto the next pair, you can't change those answers."
+		},
+		{
+			question: "For the team round, is there one answer form per team?",
+			answer: "We will have a google form for team round answers, but yes, teams should only submit 1 form. If multiple are submitted, only the last submission within the time constraint will be considered."
+		},
+		{
+			question:
+				"Do teammates have to work on the team round questions together or can they divide up the questions?",
+			answer: "This is totally up to the team, but we do recommend splitting up the work!"
+		},
+		{
+			question: "Do individual scores affect team scores?",
+			answer: "No. Individual scores only depend on the speed and target round performances. Team scores only depend on team round performances."
+		},
+		{
+			question:
+				"Are we required to attend the portion of the competition after 1:30pm?",
+			answer: "No! The fun activity will be optional."
+		},
+		{
+			question: "Will the awards ceremony also be livestreamed?",
+			answer: "Yes! We will livestream on youtube and have the link on our website later."
+		}
+	]
+
+	return (
+		<section className="py-10 text-white">
+			<div className="w-[85%] p-10 pl-0 rounded-r-[5rem] bg-primary-blue">
+				<div className="flex flex-row">
+					<div className="h-1 rounded-r-md bg-secondary-orange w-1/6 my-auto mr-4"></div>
+					<h1 className="text-4xl font-semibold text-nowrap w-5/6">
+						FAQs
+					</h1>
+				</div>
+				<div className="flex flex-row">
+					<div className="h-1 rounded-r-md w-1/6 my-auto mr-4"></div>
+					<div className="mt-6 space-y-4 w-5/6">
+						{faqs.map((faq, index) => (
+							<div key={index} className="text-lg">
+								<p className="font-semibold">{faq.question}</p>
+								<p>{faq.answer}</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
