@@ -28,6 +28,11 @@ const problemSets = [
 		title: "Team Round",
 		file: "/practice/team_round.pdf",
 		page: 2
+	},
+	{
+		title: "Solutions",
+		file: "/practice/solutions.pdf",
+		page: 1
 	}
 ]
 
