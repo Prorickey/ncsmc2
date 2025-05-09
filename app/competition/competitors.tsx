@@ -27,7 +27,7 @@ export default function CompetitorsTable({
 		<div className="w-full max-w-2xl mx-auto mt-10">
 			<input
 				type="text"
-				placeholder="Search by name, team ID, or team name..."
+				placeholder="Search by name or team ID"
 				className="mb-4 w-full px-4 py-2 rounded bg-[#232323] text-white focus:outline-none"
 				value={search}
 				onChange={e => setSearch(e.target.value)}
