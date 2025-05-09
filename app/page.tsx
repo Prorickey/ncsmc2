@@ -88,7 +88,10 @@ function InfoSection() {
 						+ 2 * (# of target round questions correct). The team
 						score = # of team round questions correct. If two teams
 						tie for the team score, then individual scores will be
-						considered as a tiebreaker.
+						considered as a tiebreaker. For tiebreakers, the score
+						with the highest Question Rarity Index (TM), or the sum
+						of 1-log(%people who answer a question correctly) over
+						all correct questions, will rank higher.
 					</p>
 				</div>
 				<div className="flex flex-row mt-10">
