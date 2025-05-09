@@ -53,3 +53,20 @@ export default function CompetitorsTable({
 		</div>
 	)
 }
+
+export function ZoomLink() {
+	return (
+		<p className="text-center w-full">
+			Zoom Link:{" "}
+			<span
+				className="cursor-pointer underline underline-offset-3 decoration-[#f4c300]"
+				onClick={() =>
+					window.open(
+						"https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2"
+					)
+				}>
+				https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2
+			</span>
+		</p>
+	)
+}
