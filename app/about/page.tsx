@@ -31,6 +31,11 @@ const team = [
 		image: "/team/default.jpg"
 	},
 	{
+		name: "Cathy Deng",
+		role: "Problem Testing and Publicity",
+		image: "/team/cathy.jpg"
+	},
+	{
 		name: "Jay Peng",
 		role: "Problem Writing",
 		image: "/team/jay.jpg"
