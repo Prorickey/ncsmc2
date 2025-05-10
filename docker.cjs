@@ -15,7 +15,7 @@ const dockerBuildChild = spawn("docker", [
 dockerBuildChild.stdout.pipe(process.stdout)
 dockerBuildChild.stderr.pipe(process.stderr)
 
-dockerBuildChild.on("exit", code => {
+dockerBuildChild.on("exit", () => {
 	console.log("Docker image built successfully!")
 	console.log("Pushing Docker image...")
 
@@ -27,7 +27,7 @@ dockerBuildChild.on("exit", code => {
 	dockerPushChild.stdout.pipe(process.stdout)
 	dockerPushChild.stderr.pipe(process.stderr)
 
-	dockerPushChild.on("exit", code => {
+	dockerPushChild.on("exit", () => {
 		console.log("Docker image pushed successfully!")
 	})
 })

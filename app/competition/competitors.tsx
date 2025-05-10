@@ -70,3 +70,17 @@ export function ZoomLink() {
 		</p>
 	)
 }
+
+// https://forms.gle/cc8jJThUTN4cjLVp9 10:15
+export function ClickyLink({ name, link }: { name: string; link: string }) {
+	return (
+		<p className="text-center w-full">
+			{name}
+			<span
+				className="cursor-pointer underline underline-offset-3 decoration-[#f4c300]"
+				onClick={() => window.open(link)}>
+				{link}
+			</span>
+		</p>
+	)
+}
