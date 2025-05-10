@@ -1,6 +1,9 @@
 "use server"
 
-import CompetitorsTable, { ZoomLink } from "@/app/competition/competitors"
+import CompetitorsTable, {
+	ClickyLink,
+	ZoomLink
+} from "@/app/competition/competitors"
 import { readFileSync } from "fs"
 import { parse } from "csv-parse"
 
@@ -34,12 +37,33 @@ export default async function CompetitionPage() {
 	shuffle(filtered)
 
 	return (
-		<div className="w-full flex flex-row justify-center">
+		<div className="w-full my-10 flex flex-row justify-center">
 			<div className="w-[95%] lg:w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Competition Day Information
 				</h1>
 				<ZoomLink />
+				<div className="my-4"></div>
+				{new Date(2025, 4, 10, 10, 15, 0, 0) < new Date() && (
+					<ClickyLink
+						name={"Speed Round Link: "}
+						link={"https://forms.gle/cc8jJThUTN4cjLVp9"}
+					/>
+				)}
+				{new Date(2025, 4, 10, 14, 5, 0, 0) < new Date() && (
+					<ClickyLink
+						name={"Accuracy Round Link: "}
+						link={"https://forms.gle/sYeQFeVWdUHhhc2n7"}
+					/>
+				)}
+				{new Date(2025, 4, 10, 15, 40, 0, 0) < new Date() && (
+					<ClickyLink
+						name={"Team Round Link: "}
+						link={
+							"https://docs.google.com/forms/d/e/1FAIpQLSdbXxdkcRVm3oeWJeCVJiNsGvdCYnQNmlEtQ31MtdBJrrGKlg/viewform?usp=dialog"
+						}
+					/>
+				)}
 				<div className="h-[1px] bg-stone-400 w-[80%] mt-2 mx-auto"></div>
 				<CompetitorsTable competitors={filtered} />
 			</div>

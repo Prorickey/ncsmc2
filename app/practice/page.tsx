@@ -112,7 +112,7 @@ export default function PracticeProblems() {
 	}, [])
 
 	return (
-		<div className="w-full flex flex-row justify-center">
+		<div className="w-full flex my-10 flex-row justify-center">
 			<div className="w-[95%] lg:w-2/3 p-5 rounded-2xl mx-auto bg-[#111111]">
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Practice Problems
