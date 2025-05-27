@@ -35,9 +35,11 @@ function MainContent() {
 							Carolina. The competition will be held virtually
 							this year.
 						</p>
-						<p className="text-white text-lg mb-3 font-bold">
-							Registration deadline is 11:59 PM, May 8th
-						</p>
+						{/*
+							<p className="text-white text-lg mb-3 font-bold">
+								Registration deadline is 11:59 PM, May 8th
+							</p>
+						*/}
 						<p className="text-lg mb-3">
 							Contact:{" "}
 							<a
@@ -154,7 +156,7 @@ function InfoSection() {
 							Students must be residents of North Carolina.
 						</li>
 						<li className="list-disc">
-							Students must register by the deadline - May 8th.
+							Students must register by the deadline - TBD!
 						</li>
 					</ul>
 				</div>

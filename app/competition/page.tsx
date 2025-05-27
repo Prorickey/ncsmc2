@@ -6,6 +6,7 @@ import CompetitorsTable, {
 } from "@/app/competition/competitors"
 import { readFileSync } from "fs"
 import { parse } from "csv-parse"
+import { notFound } from "next/navigation"
 
 interface Competitor {
 	name: string
@@ -35,6 +36,9 @@ export default async function CompetitionPage() {
 	}))
 
 	shuffle(filtered)
+
+	// Page can be activated next year
+	return notFound()
 
 	return (
 		<div className="w-full my-10 flex flex-row justify-center">

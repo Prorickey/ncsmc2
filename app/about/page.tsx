@@ -93,7 +93,7 @@ export default function AboutUs() {
 				community across North Carolina and beyond.
 			</p>
 			<h1 className="text-stone-50 text-center text-xl md:text-2xl lg:text-3xl font-semibold mb-2">
-				Meet The Team
+				Meet The 2025 Team
 			</h1>
 			<div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
 			<ResponsiveMasonry

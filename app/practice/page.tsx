@@ -13,28 +13,30 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 	import.meta.url
 ).toString()
 
-const problemSets = [
+const problemSetTypes = [
 	{
 		title: "Speed Round",
-		file: "/practice/speed_round.pdf",
-		page: 2
+		filename: "speed_round.pdf",
+		page: 1
 	},
 	{
 		title: "Accuracy Round",
-		file: "/practice/accuracy_round.pdf",
-		page: 2
+		filename: "accuracy_round.pdf",
+		page: 1
 	},
 	{
 		title: "Team Round",
-		file: "/practice/team_round.pdf",
-		page: 2
+		filename: "team_round.pdf",
+		page: 1
 	},
 	{
 		title: "Solutions",
-		file: "/practice/solutions.pdf",
+		filename: "solutions.pdf",
 		page: 1
 	}
 ]
+
+const availableYears = [2025, 2023]
 
 interface PageNumbers {
 	[key: string]: {
@@ -44,16 +46,25 @@ interface PageNumbers {
 }
 
 export default function PracticeProblems() {
+	const [selectedYear, setSelectedYear] = useState<number>(2025)
 	const [pageNumber, setPageNumber] = useState<PageNumbers>({})
 
+	// Generate problem sets based on selected year
+	const problemSets = problemSetTypes.map(item => ({
+		...item,
+		file: `/practice/${selectedYear}/${item.filename}`
+	}))
+
 	useEffect(() => {
+		// Reset page numbers when year changes
+		setPageNumber({})
 		problemSets.forEach(item => {
 			setPageNumber(prev => ({
 				...prev,
 				[item.title]: { page: item.page, total: 0 }
 			}))
 		})
-	}, [])
+	}, [selectedYear, problemSets])
 
 	function onLoadSuccess(title: string, numPages: number) {
 		setPageNumber(prev => ({
@@ -117,7 +128,25 @@ export default function PracticeProblems() {
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Practice Problems
 				</h1>
-				<div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
+				<div className="h-[1px] bg-stone-400 w-2/3 mx-auto mb-4"></div>
+
+				{/* Year Selector */}
+				<div className="flex justify-center mb-6">
+					<div className="flex bg-[#222222] rounded-lg p-1">
+						{availableYears.map(year => (
+							<button
+								key={year}
+								onClick={() => setSelectedYear(year)}
+								className={`px-4 py-2 rounded-md transition-all duration-200 ${
+									selectedYear === year
+										? "bg-[#f4c300] text-black font-semibold"
+										: "text-stone-300 hover:text-white hover:bg-[#333333]"
+								}`}>
+								{year}
+							</button>
+						))}
+					</div>
+				</div>
 				<div className="flex flex-col items-center">
 					{problemSets.map((item, index) => (
 						<div

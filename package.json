@@ -1,13 +1,13 @@
 {
 	"name": "ncsmc2",
-	"version": "1.3.16",
+	"version": "2.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "next dev --turbopack",
-		"build": "next build --turbopack",
-		"start": "next start",
-		"lint": "next lint",
+		"dev": "npx next dev --turbopack",
+		"build": "npx next build --turbopack",
+		"start": "npx next start",
+		"lint": "npx next lint",
 		"docker": "node docker.cjs",
 		"style": "npx prettier . --write",
 		"prepare": "husky"
