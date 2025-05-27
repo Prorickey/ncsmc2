@@ -44,7 +44,7 @@ export default function SchedulePage() {
 				Schedule
 			</h1>
 			<p className="w-full text-center text-xl pb-1">
-				Competition on Saturday, May 10th
+				Competition date for 2026 TBD!
 			</p>
 			<div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
 			{schedule.map((item, index) => (

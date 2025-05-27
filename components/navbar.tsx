@@ -28,9 +28,10 @@ const Navbar: React.FC = () => {
 
 	const navItems = [
 		{ name: "Home", path: "/" },
-		{ name: "Competition", path: "/competition" },
+		/*{ name: "Competition", path: "/competition" },*/
 		{ name: "Schedule", path: "/schedule" },
 		{ name: "Practice Sets", path: "/practice" },
+		{ name: "Past Winners", path: "/pastwinners" },
 		{ name: "About Us", path: "/about" }
 	]
 
@@ -39,16 +40,6 @@ const Navbar: React.FC = () => {
 			className={`fixed w-full z-50 transition-all duration-300 ${
 				scrolled ? "bg-[#111111] shadow-lg" : "bg-transparent"
 			}`}>
-			<div className="bg-amber-500 p-2">
-				<p className="text-center w-full font-semibold text-black text-2xl">
-					ALL LIVE UPDATES AND COMPETITION INFO CAN BE FOUND{" "}
-					<span
-						className="underline underline-offset-2 text-blue-800 decoration-blue-500 cursor-pointer"
-						onClick={() => window.open("/competition")}>
-						HERE
-					</span>
-				</p>
-			</div>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-16">
 					<div className="flex items-center">
