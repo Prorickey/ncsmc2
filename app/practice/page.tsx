@@ -1,17 +1,20 @@
 "use client"
 
 import Image from "next/image"
-import { pdfjs } from "react-pdf"
-import { Document, Page } from "react-pdf"
+import dynamic from "next/dynamic"
 
 import "react-pdf/dist/Page/TextLayer.css"
 import "react-pdf/dist/Page/AnnotationLayer.css"
 import { useEffect, useState } from "react"
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-	"pdfjs-dist/build/pdf.worker.min.mjs",
-	import.meta.url
-).toString()
+// Dynamically import React-PDF components on the client to avoid
+// server-side evaluation (which triggers DOM APIs like DOMMatrix).
+const Document = dynamic(() => import("react-pdf").then(m => m.Document), {
+	ssr: false
+})
+const Page = dynamic(() => import("react-pdf").then(m => m.Page), {
+	ssr: false
+})
 
 const problemSetTypes = [
 	{
@@ -64,7 +67,7 @@ export default function PracticeProblems() {
 				[item.title]: { page: item.page, total: 0 }
 			}))
 		})
-	}, [selectedYear])
+	}, [problemSets])
 
 	function onLoadSuccess(title: string, numPages: number) {
 		setPageNumber(prev => ({
@@ -120,6 +123,23 @@ export default function PracticeProblems() {
 		// Add event listener for window resize
 		window.addEventListener("resize", handleResize)
 		return () => window.removeEventListener("resize", handleResize)
+	}, [])
+
+	// Configure pdfjs worker on the client only by dynamically importing react-pdf
+	useEffect(() => {
+		// dynamic import ensures this runs only in the browser
+		import("react-pdf")
+			.then(mod => {
+				if (mod && mod.pdfjs) {
+					mod.pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+						"pdfjs-dist/build/pdf.worker.min.mjs",
+						import.meta.url
+					).toString()
+				}
+			})
+			.catch(err => {
+				console.error("Failed to configure react-pdf worker:", err)
+			})
 	}, [])
 
 	return (

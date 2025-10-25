@@ -15,20 +15,22 @@ interface Competitor {
 
 export default async function CompetitionPage() {
 	const content = readFileSync(`./teams.csv`)
-	const competitors: Competitor[] = await new Promise((resolve, reject) => {
-		parse(
-			content,
-			{
-				columns: true,
-				delimiter: ",",
-				trim: true
-			},
-			(err, output) => {
-				if (err) reject(err)
-				else resolve(output)
-			}
-		)
-	})
+	const competitors: Competitor[] = await new Promise<Competitor[]>(
+		(resolve, reject) => {
+			parse(
+				content,
+				{
+					columns: true,
+					delimiter: ",",
+					trim: true
+				},
+				(err, output: unknown) => {
+					if (err) reject(err)
+					else resolve(output as Competitor[])
+				}
+			)
+		}
+	)
 
 	const filtered = competitors.map(({ name, teamId }) => ({
 		name,
