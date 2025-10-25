@@ -6,9 +6,9 @@ import Image from "next/image"
 
 const team = [
 	{
-		name: "Grace Luo",
-		role: "Co-Czar & Problem Tester",
-		image: "/team/grace.png"
+		name: "Luca Jiang",
+		role: "Co-Czar",
+		image: "/team/luca.png"
 	},
 	{
 		name: "Anushka Pramanik",
