@@ -8,7 +8,7 @@ console.log("Building Docker image...")
 const dockerBuildChild = spawn("docker", [
 	"build",
 	"-t",
-	`docker.prorickey.xyz/prorickey/${name}:${version}`,
+	`docker.bedson.tech/tbedson/${name}:${version}`,
 	"."
 ])
 
@@ -21,7 +21,7 @@ dockerBuildChild.on("exit", () => {
 
 	const dockerPushChild = spawn("docker", [
 		"push",
-		`docker.prorickey.xyz/prorickey/${name}:${version}`
+		`docker.bedson.tech/tbedson/${name}:${version}`
 	])
 
 	dockerPushChild.stdout.pipe(process.stdout)

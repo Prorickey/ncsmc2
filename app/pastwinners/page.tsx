@@ -1,17 +1,20 @@
 "use client"
 
 import Image from "next/image"
-import { pdfjs } from "react-pdf"
-import { Document, Page } from "react-pdf"
 
 import "react-pdf/dist/Page/TextLayer.css"
 import "react-pdf/dist/Page/AnnotationLayer.css"
 import { useEffect, useState, useRef } from "react"
+import dynamic from "next/dynamic"
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-	"pdfjs-dist/build/pdf.worker.min.mjs",
-	import.meta.url
-).toString()
+// Dynamically import React-PDF components on the client to avoid
+// server-side evaluation (which triggers DOM APIs like DOMMatrix).
+const Document = dynamic(() => import("react-pdf").then(m => m.Document), {
+	ssr: false
+})
+const Page = dynamic(() => import("react-pdf").then(m => m.Page), {
+	ssr: false
+})
 
 interface PageNumbers {
 	page: number
@@ -47,6 +50,23 @@ export default function PastWinners() {
 	}
 
 	const [containerWidth, setContainerWidth] = useState<number>(0)
+
+	// Configure pdfjs worker on the client only by dynamically importing react-pdf
+	useEffect(() => {
+		// dynamic import ensures this runs only in the browser
+		import("react-pdf")
+			.then(mod => {
+				if (mod && mod.pdfjs) {
+					mod.pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+						"pdfjs-dist/build/pdf.worker.min.mjs",
+						import.meta.url
+					).toString()
+				}
+			})
+			.catch(err => {
+				console.error("Failed to configure react-pdf worker:", err)
+			})
+	}, [])
 
 	useEffect(() => {
 		function handleResize() {
