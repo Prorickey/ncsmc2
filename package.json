@@ -7,7 +7,7 @@
 		"dev": "npx next dev --turbopack",
 		"build": "npx next build --turbopack",
 		"start": "npx next start",
-		"lint": "eslint",
+		"lint": "eslint --fix",
 		"docker": "node build.mjs",
 		"docker:push": "node build.mjs --push",
 		"format": "npx prettier . --write",
