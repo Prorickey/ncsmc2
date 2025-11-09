@@ -176,17 +176,17 @@ export default function PastWinners() {
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Past Winners
 				</h1>
-				<div className="h-[1px] bg-stone-400 w-2/3 mx-auto mb-8"></div>
+				<div className="h-px bg-stone-400 w-2/3 mx-auto mb-8"></div>
 
 				{/* 2025 Winners Section */}
 				<div className="mb-8">
-					<h2 className="text-[#f4c300] text-center text-2xl md:text-3xl font-semibold mb-6">
+					<h2 className="text-secondary-yellow text-center text-2xl md:text-3xl font-semibold mb-6">
 						2025 Competition Results
 					</h2>
 
 					{/* Individual Winners */}
 					<div className="mb-6 p-4 bg-[#222222] rounded-lg">
-						<h3 className="text-[#f4c300] text-xl font-semibold mb-4">
+						<h3 className="text-secondary-yellow text-xl font-semibold mb-4">
 							Top 5 Individual Winners
 						</h3>
 						<div className="grid gap-2">
@@ -195,7 +195,7 @@ export default function PastWinners() {
 									key={winner.place}
 									className="flex justify-between items-center p-2 bg-[#333333] rounded">
 									<span className="text-stone-300">
-										<span className="text-[#f4c300] font-semibold">
+										<span className="text-secondary-yellow font-semibold">
 											#{winner.place}
 										</span>{" "}
 										{winner.name}
@@ -210,7 +210,7 @@ export default function PastWinners() {
 
 					{/* Team Winners */}
 					<div className="mb-6 p-4 bg-[#222222] rounded-lg">
-						<h3 className="text-[#f4c300] text-xl font-semibold mb-4">
+						<h3 className="text-secondary-yellow text-xl font-semibold mb-4">
 							Top 5 Team Winners
 						</h3>
 						<div className="grid gap-3">
@@ -219,7 +219,7 @@ export default function PastWinners() {
 									key={team.place}
 									className="p-3 bg-[#333333] rounded">
 									<div className="flex justify-between items-center mb-1">
-										<span className="text-[#f4c300] font-semibold">
+										<span className="text-secondary-yellow font-semibold">
 											#{team.place} {team.name}
 										</span>
 										<span className="text-stone-300">
@@ -236,7 +236,7 @@ export default function PastWinners() {
 
 					{/* Math Bowl Winners */}
 					<div className="mb-6 p-4 bg-[#222222] rounded-lg">
-						<h3 className="text-[#f4c300] text-xl font-semibold mb-4">
+						<h3 className="text-secondary-yellow text-xl font-semibold mb-4">
 							Math Bowl Winners
 						</h3>
 						<div className="grid gap-2">
@@ -245,7 +245,7 @@ export default function PastWinners() {
 									key={winner.place}
 									className="flex justify-between items-center p-2 bg-[#333333] rounded">
 									<span className="text-stone-300">
-										<span className="text-[#f4c300] font-semibold">
+										<span className="text-secondary-yellow font-semibold">
 											#{winner.place}
 										</span>{" "}
 										{winner.name}
@@ -260,7 +260,7 @@ export default function PastWinners() {
 
 					{/* Estimathon Winners */}
 					<div className="mb-6 p-4 bg-[#222222] rounded-lg">
-						<h3 className="text-[#f4c300] text-xl font-semibold mb-4">
+						<h3 className="text-secondary-yellow text-xl font-semibold mb-4">
 							Estimathon Winners
 						</h3>
 						<div className="grid gap-3">
@@ -269,7 +269,7 @@ export default function PastWinners() {
 									key={team.place}
 									className="p-3 bg-[#333333] rounded">
 									<div className="flex justify-between items-center mb-1">
-										<span className="text-[#f4c300] font-semibold">
+										<span className="text-secondary-yellow font-semibold">
 											#{team.place} {team.name}
 										</span>
 										<span className="text-stone-300">
@@ -288,7 +288,7 @@ export default function PastWinners() {
 				{/* Awards Slideshow */}
 				<div className="mb-6 p-4 bg-[#222222] rounded-lg shadow-md">
 					<div className="flex flex-row justify-between items-center mb-4">
-						<h2 className="text-[#f4c300] text-xl font-semibold">
+						<h2 className="text-secondary-yellow text-xl font-semibold">
 							2025 Awards Ceremony Slideshow
 						</h2>
 						<div

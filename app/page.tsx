@@ -19,13 +19,13 @@ function MainContent() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="md:flex md:items-center md:justify-between">
 					<div className="py-4 md:py-10 px-4 md:px-10">
-						<h1 className="text-[#f4c300] text-5xl md:text-6xl font-bold mb-2">
+						<h1 className="text-secondary-yellow text-5xl md:text-6xl font-bold mb-2">
 							NC(SMC)<sup>2</sup>
 						</h1>
-						<h3 className="text-[#99caea] text-xl md:text-2xl font-semibold mb-2">
+						<h3 className="text-secondary-blue text-xl md:text-2xl font-semibold mb-2">
 							North Carolina School of Science and Mathematics
 						</h3>
-						<h4 className="text-[#d57e00] font-semibold text-lg md:text-xl mb-4">
+						<h4 className="text-secondary-orange font-semibold text-lg md:text-xl mb-4">
 							Math Club Competition - May 10th
 						</h4>
 						<p className="text-white text-lg mb-3 max-w-2xl">
@@ -44,7 +44,7 @@ function MainContent() {
 							Contact:{" "}
 							<a
 								href="mailto:ncsmc2@gmail.com"
-								className="underline underline-offset-3 decoration-[#f4c300]">
+								className="underline underline-offset-3 decoration-secondary-yellow">
 								ncsmc2@gmail.com
 							</a>
 						</p>
@@ -54,7 +54,7 @@ function MainContent() {
 									"https://forms.gle/BABr2xtG2Jewiej1A"
 								)
 							}
-							className="inline-block px-6 py-3 bg-[#f4c300] hover:bg-[#f4c300]/90 
+							className="inline-block px-6 py-3 bg-secondary-yellow hover:bg-secondary-yellow/90 
 			text-gray-900 font-medium rounded-md transition-colors duration-200 cursor-pointer">
 							Register
 						</a>
@@ -184,7 +184,7 @@ function SponsorSection() {
 						sponsoring the NC(SMC)<sup>2</sup>, please contact us at{" "}
 						<a
 							href="mailto:ncsmc2@gmail.com"
-							className="underline underline-offset-3 decoration-[#f4c300]">
+							className="underline underline-offset-3 decoration-secondary-yellow">
 							ncsmc2@gmail.com
 						</a>
 					</p>

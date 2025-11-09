@@ -5,7 +5,7 @@ const buildEslintCommand = filenames =>
 		.map(f => path.relative(process.cwd(), f))
 		.join(" --file ")}`
 
-export default {
+const config = {
 	"*.{js,jsx,ts,tsx}": filenames => {
 		const relativeFiles = filenames.map(f =>
 			path.relative(process.cwd(), f)
@@ -21,3 +21,5 @@ export default {
 		`git add ${filenames.join(" ")}`
 	]
 }
+
+export default config

@@ -46,12 +46,15 @@ export default function SchedulePage() {
 			<p className="w-full text-center text-xl pb-1">
 				Competition date for 2026 TBD!
 			</p>
-			<div className="h-[1px] bg-stone-400 w-2/3 mx-auto"></div>
+			<p className="w-full text-stone-400  text-center text-lg italic pb-1">
+				This is the 2025 schedule
+			</p>
+			<div className="h-px bg-stone-400 w-2/3 mx-auto"></div>
 			{schedule.map((item, index) => (
 				<div
 					key={index}
 					className="my-4 p-4 bg-[#222222] rounded-lg shadow-md">
-					<h2 className="text-[#f4c300] text-xl font-semibold">
+					<h2 className="text-secondary-yellow text-xl font-semibold">
 						{item.title}
 					</h2>
 					<p className="text-[#8a8a8d] text-lg">{item.time}</p>
