@@ -67,14 +67,14 @@ export default function PracticeProblems() {
 				[item.title]: { page: item.page, total: 0 }
 			}))
 		})
-	}, [problemSets])
+	}, [selectedYear])
 
-	function onLoadSuccess(title: string, numPages: number) {
+	function onLoadSuccess(title: string, pdf: { numPages: number }) {
 		setPageNumber(prev => ({
 			...prev,
 			[title]: {
 				...prev[title],
-				total: numPages
+				total: pdf.numPages
 			}
 		}))
 	}
@@ -148,7 +148,7 @@ export default function PracticeProblems() {
 				<h1 className="text-stone-50 text-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2">
 					Practice Problems
 				</h1>
-				<div className="h-[1px] bg-stone-400 w-2/3 mx-auto mb-4"></div>
+				<div className="h-px bg-stone-400 w-2/3 mx-auto mb-4"></div>
 
 				{/* Year Selector */}
 				<div className="flex justify-center mb-6">
@@ -159,7 +159,7 @@ export default function PracticeProblems() {
 								onClick={() => setSelectedYear(year)}
 								className={`px-4 py-2 rounded-md transition-all duration-200 ${
 									selectedYear === year
-										? "bg-[#f4c300] text-black font-semibold"
+										? "bg-secondary-yellow text-black font-semibold"
 										: "text-stone-300 hover:text-white hover:bg-[#333333]"
 								}`}>
 								{year}
@@ -173,7 +173,7 @@ export default function PracticeProblems() {
 							key={index}
 							className="my-4 p-4 bg-[#222222] rounded-lg shadow-md">
 							<div className="flex flex-row justify-between">
-								<h2 className="text-[#f4c300] text-nowrap text-xl font-semibold mb-2">
+								<h2 className="text-secondary-yellow text-nowrap text-xl font-semibold mb-2">
 									{item.title}
 								</h2>
 								<div
@@ -195,7 +195,7 @@ export default function PracticeProblems() {
 								file={item.file}
 								className="w-full"
 								onLoadSuccess={pdf =>
-									onLoadSuccess(item.title, pdf.numPages)
+									onLoadSuccess(item.title, pdf)
 								}>
 								{pageNumber[item.title] && (
 									<Page

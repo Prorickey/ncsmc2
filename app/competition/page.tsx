@@ -70,7 +70,7 @@ export default async function CompetitionPage() {
 						}
 					/>
 				)}
-				<div className="h-[1px] bg-stone-400 w-[80%] mt-2 mx-auto"></div>
+				<div className="h-px bg-stone-400 w-[80%] mt-2 mx-auto"></div>
 				<CompetitorsTable competitors={filtered} />
 			</div>
 		</div>
