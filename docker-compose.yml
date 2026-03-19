@@ -1,0 +1,6 @@
+services:
+  ncsmc2:
+    image: docker.bedson.tech/tbedson/ncsmc2:2.2.2
+    ports:
+      - "3313:3000"
+    restart: unless-stopped

@@ -14,6 +14,9 @@ interface Competitor {
 }
 
 export default async function CompetitionPage() {
+	// Page can be activated next year
+	return notFound()
+
 	const content = readFileSync(`./teams.csv`)
 	const competitors: Competitor[] = await new Promise<Competitor[]>(
 		(resolve, reject) => {
@@ -38,9 +41,6 @@ export default async function CompetitionPage() {
 	}))
 
 	shuffle(filtered)
-
-	// Page can be activated next year
-	return notFound()
 
 	return (
 		<div className="w-full my-10 flex flex-row justify-center">
