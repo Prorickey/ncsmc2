@@ -26,7 +26,7 @@ function MainContent() {
 							North Carolina School of Science and Mathematics
 						</h3>
 						<h4 className="text-secondary-orange font-semibold text-lg md:text-xl mb-4">
-							Math Club Competition - May 10th
+							Math Club Competition - May 9th
 						</h4>
 						<p className="text-white text-lg mb-3 max-w-2xl">
 							The NCSSM Math Club Competition, or NC(SMC)

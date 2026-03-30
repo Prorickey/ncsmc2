@@ -1,6 +1,9 @@
 import path from "path"
+import { fileURLToPath } from "url"
 
-const buildEslintCommand = filenames => `eslint --fix .`
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const buildEslintCommand = filenames =>
+	`${path.join(__dirname, "node_modules", ".bin", "eslint")} --fix .`
 
 const config = {
 	"*.{js,jsx,ts,tsx}": filenames => {
