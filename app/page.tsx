@@ -51,7 +51,7 @@ function MainContent() {
 						<a
 							onClick={() =>
 								window.open(
-									"https://forms.gle/BABr2xtG2Jewiej1A"
+									"https://forms.gle/g8Vj1RshvH1UnDLi6"
 								)
 							}
 							className="inline-block px-6 py-3 bg-secondary-yellow hover:bg-secondary-yellow/90 
