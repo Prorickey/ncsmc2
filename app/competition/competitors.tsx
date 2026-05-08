@@ -61,11 +61,9 @@ export function ZoomLink() {
 			<span
 				className="cursor-pointer underline underline-offset-3 decoration-secondary-yellow"
 				onClick={() =>
-					window.open(
-						"https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2"
-					)
+					window.open("https://us06web.zoom.us/j/85263087961")
 				}>
-				https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2
+				https://us06web.zoom.us/j/85263087961
 			</span>
 		</p>
 	)

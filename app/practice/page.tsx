@@ -67,7 +67,7 @@ export default function PracticeProblems() {
 				[item.title]: { page: item.page, total: 0 }
 			}))
 		})
-	}, [selectedYear])
+	}, [selectedYear, problemSets])
 
 	function onLoadSuccess(title: string, pdf: { numPages: number }) {
 		setPageNumber(prev => ({

@@ -34,8 +34,7 @@ export default function SchedulePage() {
 			time: "1:45-2:45",
 			description:
 				"TBD, something fun! Disputes need to be submitted by 2:00"
-		},
-		{ title: "Awards Ceremony", time: "2:45-3:15", description: "" }
+		}
 	]
 
 	return (

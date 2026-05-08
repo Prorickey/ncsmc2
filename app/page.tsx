@@ -232,11 +232,11 @@ function FAQSection() {
 		},
 		{
 			question: "What's the zoom link?",
-			answer: "https://ncssm.zoom.us/j/91891118463?pwd=bAQUVLjymVY5DI69OSExw7O9fDKvow.1&jst=2"
+			answer: "https://us06web.zoom.us/j/85263087961"
 		},
 		{
 			question: "What prizes will be awarded?",
-			answer: "We plan to have trophies for the top 5 individuals, AOPS coupons for the top team, and Jane Street shirts for the top 5 teams. There may be extra prizes, TBD!"
+			answer: "We plan to have trophies for the top 5 individuals, AOPS coupons for the top team, and extra prizes for the top 5 teams. There may be additional prizes, TBD!"
 		},
 		{
 			question:
