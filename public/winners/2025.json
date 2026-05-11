@@ -1,0 +1,87 @@
+{
+	"year": 2025,
+	"individual": [
+		{ "place": 1, "name": "Daniel Liu", "score": 50 },
+		{ "place": 2, "name": "Andrew Yang", "score": 47 },
+		{ "place": 3, "name": "Ryan Guo", "score": 47 },
+		{ "place": 4, "name": "Dylan Zhang", "score": 47 },
+		{ "place": 5, "name": "Andrew Chen", "score": 46 }
+	],
+	"teams": [
+		{
+			"place": 1,
+			"name": "we wouldve won if shivank was here",
+			"members": ["Daniel Liu", "Junlong Sun"],
+			"score": 16
+		},
+		{
+			"place": 2,
+			"name": "The E-ticks",
+			"members": ["Andrew Yang", "Dylan Zhang", "Eric Wu", "Aiden Wang"],
+			"score": 14
+		},
+		{
+			"place": 3,
+			"name": "team 23",
+			"members": [
+				"Isabella Zou",
+				"Lilly Yang",
+				"Victor Yang",
+				"Ryan Guo"
+			],
+			"score": 14
+		},
+		{
+			"place": 4,
+			"name": "Masterminds",
+			"members": ["Ricky Li", "Albert Liu", "Felix Yang", "David Bao"],
+			"score": 13
+		},
+		{
+			"place": 5,
+			"name": "Torito",
+			"members": ["Andrew Chen", "Max Desaikov", "Jack Chen"],
+			"score": 12
+		}
+	],
+	"mathBowl": [
+		{
+			"place": 1,
+			"name": "Dylan Zhang",
+			"score": 335,
+			"room": "Insane Room"
+		},
+		{ "place": 2, "name": "Ryan Guo", "score": 656, "room": "Hard Room" },
+		{ "place": 3, "name": "Andrew Chen", "score": 345, "room": "Hard Room" }
+	],
+	"estimathon": [
+		{
+			"place": 1,
+			"name": "Room 14",
+			"members": [
+				"Victor Yang",
+				"Zara Anand",
+				"Taarun Dinesh Kumar",
+				"Aarav Anand"
+			],
+			"score": 24576
+		},
+		{
+			"place": 2,
+			"name": "Room 12",
+			"members": [
+				"Aman Pinnamaraju",
+				"Charan Sunkara",
+				"Cole Mammarappallil"
+			],
+			"score": 43008
+		},
+		{
+			"place": 3,
+			"name": "Room 10",
+			"members": ["Sri Gutta", "Reyansh Gupta"],
+			"score": 65536
+		}
+	],
+	"awardsSlideshow": "/winners/2025_awards.pdf"
+}

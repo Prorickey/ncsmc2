@@ -39,7 +39,9 @@ const problemSetTypes = [
 	}
 ]
 
-const availableYears = [2025, 2023]
+const availableYears = [2026, 2025, 2023]
+
+const yearsWithSolutions = [2025, 2023]
 
 interface PageNumbers {
 	[key: string]: {
@@ -49,25 +51,31 @@ interface PageNumbers {
 }
 
 export default function PracticeProblems() {
-	const [selectedYear, setSelectedYear] = useState<number>(2025)
+	const [selectedYear, setSelectedYear] = useState<number>(2026)
+	const [initializedYear, setInitializedYear] = useState<number | null>(null)
 	const [pageNumber, setPageNumber] = useState<PageNumbers>({})
 
-	// Generate problem sets based on selected year
-	const problemSets = problemSetTypes.map(item => ({
-		...item,
-		file: `/practice/${selectedYear}/${item.filename}`
-	}))
+	// Generate problem sets based on selected year, excluding Solutions if not yet available
+	const problemSets = problemSetTypes
+		.filter(
+			item =>
+				item.title !== "Solutions" ||
+				yearsWithSolutions.includes(selectedYear)
+		)
+		.map(item => ({
+			...item,
+			file: `/practice/${selectedYear}/${item.filename}`
+		}))
 
-	useEffect(() => {
-		// Reset page numbers when year changes
-		setPageNumber({})
-		problemSets.forEach(item => {
-			setPageNumber(prev => ({
-				...prev,
-				[item.title]: { page: item.page, total: 0 }
-			}))
+	// Reset page numbers when year changes (render-phase update avoids effect setState lint error)
+	if (initializedYear !== selectedYear) {
+		const initialPages: PageNumbers = {}
+		problemSetTypes.forEach(item => {
+			initialPages[item.title] = { page: item.page, total: 0 }
 		})
-	}, [selectedYear, problemSets])
+		setPageNumber(initialPages)
+		setInitializedYear(selectedYear)
+	}
 
 	function onLoadSuccess(title: string, pdf: { numPages: number }) {
 		setPageNumber(prev => ({

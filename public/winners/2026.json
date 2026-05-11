@@ -1,0 +1,107 @@
+{
+	"year": 2026,
+	"individual": [
+		{ "place": 1, "name": "Rishaan Chatterjee", "score": 41 },
+		{ "place": 2, "name": "Eric Wu", "score": 39, "tiebreaker": true },
+		{
+			"place": 3,
+			"name": "Kairav Kothiyal",
+			"score": 39,
+			"tiebreaker": true
+		},
+		{ "place": 4, "name": "Andrew Yang", "score": 39, "tiebreaker": true },
+		{ "place": 5, "name": "Tristan Van Moere", "score": 37 }
+	],
+	"teams": [
+		{
+			"place": 1,
+			"name": "We wouldve won if Jiayu was here",
+			"members": ["Eric Wu", "Andrew Yang", "James Wang"],
+			"score": 17
+		},
+		{
+			"place": 2,
+			"name": "Team Spurs",
+			"members": [
+				"Tristan Van Moere",
+				"Pranav Reddy Putheri",
+				"Kiaan Agrawal"
+			],
+			"score": 17
+		},
+		{
+			"place": 3,
+			"name": "Team GAJA",
+			"members": [
+				"George Orlov",
+				"Ashwanth Premkumar",
+				"Jayanth Premkumar",
+				"Ashwath Vimal"
+			],
+			"score": 17
+		},
+		{
+			"place": 4,
+			"name": "Priyanwita Dey",
+			"members": ["Priyanwita Dey"],
+			"score": 15
+		},
+		{
+			"place": 5,
+			"name": "Yashwin",
+			"members": ["Yashwin", "Aadith", "Yuvan", "Bharath"],
+			"score": 15
+		}
+	],
+	"mathBowl": [
+		{
+			"place": 1,
+			"name": "Kairav Kothiyal",
+			"score": 240,
+			"room": "Hard Room"
+		},
+		{ "place": 2, "name": "Liam Liu", "score": 124, "room": "Hard Room" },
+		{
+			"place": 3,
+			"name": "Taarun Dinesh",
+			"score": 285,
+			"room": "Medium Room"
+		},
+		{
+			"place": 4,
+			"name": "Vishai Duba",
+			"score": 245,
+			"room": "Medium Room"
+		}
+	],
+	"estimathon": [
+		{
+			"place": 1,
+			"name": "Room 16",
+			"members": [
+				"Andrew Park",
+				"Arjun Jain",
+				"Neal Rasi",
+				"Viraaj Khera"
+			],
+			"score": 4608
+		},
+		{
+			"place": 2,
+			"name": "Room 10",
+			"members": [
+				"Aman Pinnamaraju",
+				"Karthi Palani",
+				"Krivi Gangishetty"
+			],
+			"score": 12800
+		},
+		{
+			"place": 3,
+			"name": "Room 12",
+			"members": ["Vedanth Viswanath", "Olivia Diao", "Yuncheng Li"],
+			"score": 16384
+		}
+	],
+	"awardsSlideshow": "/winners/2026_awards.pdf"
+}
